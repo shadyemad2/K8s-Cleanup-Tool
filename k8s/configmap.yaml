@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cleanup-config
+  namespace: default
+data:
+  DELETE_PODS: "true"
+  DELETE_JOBS: "true"
+  DELETE_PVCS: "false"
+

@@ -1,0 +1,19 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: k8s-cleanup
+spec:
+  schedule: "0 */6 * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          serviceAccountName: cleanup-sa
+          containers:
+          - name: cleaner
+            image: shadyemad/k8s-cleanup:latest
+            envFrom:
+              - configMapRef:
+                  name: cleanup-config
+          restartPolicy: OnFailure
+
