@@ -83,6 +83,11 @@ Make sure the `cleanup-sa` service account is bound to a `ClusterRole` that allo
 [🗑️] Deleting Failed or Evicted Pods...
 [✅] Kubernetes Cleanup Completed
 ```
+## ✅ For Test
+
+<img width="368" height="237" alt="error-pod-yaml" src="https://github.com/user-attachments/assets/1ce8106f-8720-4a3e-8271-d3530d1e7e5a" />
+<img width="1767" height="540" alt="test" src="https://github.com/user-attachments/assets/ffa25c37-d7c6-47e5-95b7-7c99273daee1" />
+
 
 > View output using:
 ```bash
